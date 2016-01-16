@@ -3,3 +3,4 @@ datasub1 <- subset(data1, as.Date(Date,"%d/%m/%Y")==as.Date("01/02/2007","%d/%m/
 png(file="Plot2.png",width=480,height=480)
 plot(strptime(paste(datasub1[,1],datasub1[,2]),format="%d/%m/%Y %H:%M:%S"),as.numeric(as.character(datasub1[,3])),type="l",xlab="",ylab="Global Active Power (kilowatts)")
 dev.off()
+
